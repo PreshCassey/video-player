@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="145dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/filepath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="375dp"
+            android:layout_height="145dp"
+            android:background="@drawable/background">
+
+            <ImageView
+                android:id="@+id/thumb"
+                android:layout_width="154dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background"/>
+
+            <LinearLayout
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="194dp"
+                    android:layout_height="126dp"
+                    android:background="@drawable/background"
+                    android:padding="10dp"
+                    android:text="title"
+                    android:textColor="@color/playlist" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/background"
+                    android:padding="10dp"
+                    android:text="title"
+                    android:textColor="@color/playlist" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background"
+        app:popupTheme="@color/playlist">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="53dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/icin"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/m"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/playlist">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Video" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/videos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/m"
+        android:layout_weight="1"
+        android:background="@drawable/background"
+        android:text="Videos"
+        android:textAlignment="center"
+        android:drawableBottom="@drawable/video"
+        android:textColor="@color/playlist"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/video_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/videos"
+        android:background="@drawable/background"
+        android:isScrollContainer="false"
+        android:overScrollMode="always"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right" />
+</RelativeLayout>

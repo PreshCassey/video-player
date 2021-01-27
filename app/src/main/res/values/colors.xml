@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#520479</color>
+    <color name="background_color">#7315DA</color>
+<!--    <color name="background_color">#424242</color>-->
+    <color name="playlist">#EDEDED</color>
+    <color name="laylist">#237EFA</color>
+
+    <color name="n" >  #C44FDB</color>
+
+
+    </resources>

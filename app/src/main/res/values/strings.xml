@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">P A C player</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="video">Video</string>
+    <string name="video_player">Video player</string>
+</resources>
